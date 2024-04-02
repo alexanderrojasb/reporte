@@ -1,9 +1,9 @@
 import React from 'react'
 import { Ventas } from './Ventas';
 import documento from '../img/documento.svg'
-import { VentasNuevo } from './VentasNuevo';
 import { VentasHeader } from './VentasHeader';
 import { Contenedor } from './Contenedor';
+import { Nuevo } from './Nuevo.jsx'
 
 
 export const Bloque6 = () => {
@@ -15,9 +15,11 @@ export const Bloque6 = () => {
     <Contenedor>
         <VentasHeader/>
         <ul className=''>
-            <VentasNuevo/>
             <Ventas/>
-            <VentasNuevo/>
+            <Ventas/>
+            <Ventas>
+                <Nuevo/>
+            </Ventas>
             {Array.from({ length: rep3 }, (_, index) => (
             <li className='flex border-b gap-3 px-5 py-2  items-center justify-between' key={index}>
                 <div className='flex gap-3 py-1'>

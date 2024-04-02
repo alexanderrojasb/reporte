@@ -1,6 +1,6 @@
 import React from 'react'
 import { Ventas } from './Ventas';
-import { VentasNuevo } from './VentasNuevo';
+import { Nuevo } from './Nuevo';
 import { VentasHeader } from './VentasHeader';
 import { Contenedor } from './Contenedor';
 
@@ -9,9 +9,13 @@ export const Bloque3 = () => {
     <Contenedor>
         <VentasHeader/>
         <ul className=''>
-            <VentasNuevo/>
+            <Ventas>
+              <Nuevo/>
+            </Ventas>
             <Ventas/>
-            <VentasNuevo/>
+            <Ventas>
+              <Nuevo/>
+            </Ventas>
         </ul>
     </Contenedor>
   )
